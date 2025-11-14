@@ -1,7 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useFoodContext } from "../contexts/foodContext";
-import SkeletonforDishCard from "./skeletonForDishCard";
 
 export default function FoodCard({ foodItem }) {
   const [clickedFoodItem, setClickedFoodItem] = useState("");

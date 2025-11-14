@@ -85,7 +85,6 @@ export default function RecipeGen() {
                   className="bg-red-200 text-xl  px-4 py-2 font-bold cursor-pointer hover:scale-105 transition-all rounded-xl "
                   onClick={() => goingForCatgory(dishData.meals[0].strCategory)}
                 >
-                  {/* <CategoryButton category={dishData.meals[0].strCategory} /> */}
                   {dishData.meals[0].strCategory}
                 </span>
               </div>
@@ -130,8 +129,6 @@ export default function RecipeGen() {
                 ))}
               </div>
               <div className=" w-7/12 flex flex-col   ">
-                {/* <h1 className="text-lg font-bold">{}</h1> */}
-
                 <div className="">
                   <Typography variant="h3" component="span">
                     Instructions

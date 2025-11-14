@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function FavoritesPage() {
   const { favorites } = useFoodContext();
   if (favorites) {
-    console.log(favorites);
+    
     <div>
       <h2>your favorites</h2>
       <div>

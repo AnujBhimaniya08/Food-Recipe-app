@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function CategoryCard({ category }) {
   const [query, setQuery] = useState("");
-  console.log(category);
   const navigate = useNavigate();
   let url = "";
   if (query !== "") {

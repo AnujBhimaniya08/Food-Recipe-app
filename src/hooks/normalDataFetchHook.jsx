@@ -13,7 +13,7 @@ export default function NormalFetch(url) {
         const response = await fetch(url);
         if (!response) throw new Error("Error has occured");
         const result = await response.json();
-        console.log(result);
+        
         setData(result);
       } catch (error) {
         console.log(error, errorMsg);
