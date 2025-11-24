@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import LunchDiningIcon from "@mui/icons-material/LunchDining";
 function NavBar() {
   return (
     <nav className="bg-zinc-800 text-white flex  mt-1 justify-between w-360 mx-auto font-bold border-2 rounded-xl shadow-xl">
@@ -9,7 +9,9 @@ function NavBar() {
           <button className=" p-2 cursor-pointer ml-2 mt-2 flex justify-between gap-1 ">
             <h1 className="text-xl"> Food Recipe App</h1>
 
-            <h1 className="text-4xl  relative bottom-3">🍔</h1>
+            <h1 className="text-4xl  relative bottom-3">
+              <LunchDiningIcon  fontSize="large" />
+            </h1>
           </button>
         </Link>
       </div>

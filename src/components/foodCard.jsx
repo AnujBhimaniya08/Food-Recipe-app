@@ -1,7 +1,8 @@
 import { Suspense, useEffect, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useFoodContext } from "../contexts/foodContext";
-
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 export default function FoodCard({ foodItem }) {
   const [clickedFoodItem, setClickedFoodItem] = useState("");
   const { addTofavs, removeFavs, isFav } = useFoodContext();
@@ -47,12 +48,16 @@ export default function FoodCard({ foodItem }) {
           >
             Instructions
           </button>
-          <span className="border-2  left-16 rounded-full p-2 mb-2 bg-zinc-500">
+          <span className="border-2  left-16 rounded-full px-2 py-1.5 mb-2 bg-zinc-500">
             <button
               onClick={onCLickingFavButton}
               className="text-2xl !cursor-pointer  "
             >
-              {favorite ? "❤️" : "🤍"}
+              {favorite ? (
+                <FavoriteIcon className="hover:scale-115" fontSize="large" />
+              ) : (
+                <FavoriteBorderIcon fontSize="large" />
+              )}
             </button>
           </span>
         </div>
